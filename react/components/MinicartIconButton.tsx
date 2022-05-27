@@ -66,7 +66,7 @@ const MinicartIconButton: React.FC<Props> = props => {
   const { url: checkoutUrl } = useCheckoutURL()
   const goToCheckout = useCheckout()
 
-  const handleClick = () => {
+  function handleClick() {
     if (openOnHoverProp) {
       if (variation === 'popupWithLink') {
         goToCheckout(checkoutUrl)
