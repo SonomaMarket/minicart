@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [2.63.4] - 2022-05-24
+
+### Fixed
+
+- Do not emit `cartChanged` pixel event if orderForm is still updating (denoted by the most recent item's `additionalInfo` property being `undefined`)
+
 ## [2.63.3] - 2022-03-03
 ### Fixed
 - Brackets in `minicart-checkout-button` (documentation).
