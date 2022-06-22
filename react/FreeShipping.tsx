@@ -37,10 +37,7 @@ const FreeShipping = () => {
   return (
     <div className={styles.freeShipping}>
       <div className={styles.freeShippingText}>
-        Faltam 
-        <strong className={styles.freeShippingHighlight}>R${(freeShippingPrice - totalPrice).toFixed(2).replace(".",",")}</strong> 
-        para você ganhar 
-        <strong className={styles.freeShippingHighlight}>frete grátis!</strong>
+        Faltam <strong className={styles.freeShippingHighlight}>R${(freeShippingPrice - totalPrice).toFixed(2).replace(".",",")}</strong> para você ganhar <strong className={styles.freeShippingHighlight}>frete grátis!</strong>
       </div>
       <input 
         type="range"
