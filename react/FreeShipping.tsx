@@ -9,7 +9,10 @@ const FreeShipping = () => {
   const freeShippingPrice = 350;
 
   useEffect(() => {
-    const total = items.reduce((acc:number, item:{priceDefinition: {total:number}}) => acc + (item.priceDefinition.total) / 100, 0)
+    if(!items.length)
+      return;
+      
+    const total = items.reduce((acc:number, item:{priceDefinition: {total:number}}) => acc + (item.priceDefinition?.total) / 100, 0)
     setTotalPrice(total)
     setPercent((total * 100) / freeShippingPrice)
   }, [items])
