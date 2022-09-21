@@ -2,7 +2,7 @@
   "vendor": "sonoma",
   "name": "minicart",
   "title": "Mini Cart",
-  "version": "2.63.8",
+  "version": "2.63.9",
   "builders": {
     "messages": "1.x",
     "store": "0.x",
