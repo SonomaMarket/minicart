@@ -14,7 +14,7 @@
     "children": ["flex-layout.col#minicart-footer"]
   },
   "flex-layout.col#minicart-footer": {
-    "children": ["minicart-summary", "minicart-checkout-button"]
+    "children": ["free-shipping","minicart-summary", "minicart-checkout-button"]
   },
   "minicart-product-list": {
     "blocks": ["product-list#minicart"]

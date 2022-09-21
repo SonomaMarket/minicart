@@ -24,6 +24,9 @@
   "minicart-checkout-button": {
     "component": "CheckoutButton"
   },
+  "free-shipping": {
+    "component": "FreeShipping"
+  },
   "minicart-summary": {
     "component": "Summary",
     "allowed": ["checkout-summary"],
