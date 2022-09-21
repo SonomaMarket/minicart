@@ -21,7 +21,7 @@ const FreeShipping = () => {
 
   if (!items.length) return null
 
-  if (!freeShippingPrice)
+  if (!freeShippingPrice || isPreSale(items))
     return null
 
   if (totalPrice > freeShippingPrice) return (
@@ -68,6 +68,16 @@ function getFreeShippingAmount() {
     return regionShippingTable[getUfAndCity.uf]
 
   return null;
+}
+
+function isPreSale(items: any){
+  const preSale = items.filter((item: any) => 
+    item?.name?.toLowerCase()
+    .replace("é","e").replace("pre-venda","pre venda")
+    .includes("pre venda")
+  )
+
+  return preSale.length
 }
 
 const regionShippingTable: any = {
